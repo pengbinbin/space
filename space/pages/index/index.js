@@ -3,6 +3,9 @@
 var app = getApp()
 Page({
   data: {
+    h1: "外婆家的味道",
+    p: "不上火的快餐",
+    homeImg: "../../public/images/ad/ad.jpg",
     motto: 'Hello World',
     userInfo: {}
   },
@@ -22,5 +25,19 @@ Page({
         userInfo:userInfo
       })
     })
+  },
+  onReady: function(e){
+    // var context = wx.createCanvasContext('basesvg');
+    // const grd = context.createLinearGradient(0, 200, 200, 0);
+    // grd.addColorStop(0, 'rgba(255, 134, 71, 0.5)');
+    // grd.addColorStop(0.2, 'rgba(255, 134, 71, 0.5)');
+    // grd.addColorStop(0.4, 'rgba(255, 255, 255, 0.1)');
+    // grd.addColorStop(1, 'rgba(255, 255, 255, 0.1)');
+
+    // context.setFillStyle(grd);
+    // context.fillRect(0, 0, 200, 400);
+    // context.draw();
+    // console.log(document);
+    
   }
 })
