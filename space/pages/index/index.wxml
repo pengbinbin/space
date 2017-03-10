@@ -7,8 +7,24 @@
   <text class="h1">{{h1}}</text>
   <text class="">{{p}}</text>
 </view>
+<view class="search-bar">
+  <form bindreset="formReset" bindsubmit="formSubmit" class="search-form">
+    <view class="search-box">
+      <block wx:for="{{iconSize}}">
+        <icon type="search" size="{{item}}"/>
+      </block>
+      <input type="text" class="search-input" placeholder="搜索"/>
+    </view>
+    <label class="search-label">
+      <block wx:for="{{iconSize}}">
+        <icon type="search" size="{{item}}"/>
+      </block>
+      <text>搜索</text>
+    </label>
+  </form>
+</view>
 <!--<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
+  <view bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
